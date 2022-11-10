@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         paddingVertical: 20.5,
-        paddingHorizontal: 18
+        paddingHorizontal: 18,
+        borderBottomWidth: 1, 
+        borderColor: "#E5E7EB"
     },
     title: {
         fontSize: 20,

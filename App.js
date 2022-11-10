@@ -6,7 +6,7 @@ import Timeline from './src/components/Timeline';
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#F3F4F6" }}>
       <Header />
       <Timeline />
     </SafeAreaView>

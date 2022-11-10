@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "name": "Ekin İçbudak",
+        "profile_image": "https://randomuser.me/api/portraits/men/34.jpg",
+        "title": "UX Designer",
+        "created_at": "2022-11-10 00:00:00",
+        "post": {
+            "message": "Lorem ipsum dolor sit amet 🤔, consectetur adipiscing elit, sed do @nilsuderici",
+            "image": "https://images.squarespace-cdn.com/content/v1/5f218ff1c287187ac8c9656c/1667557559492-K0EUIU65XOFTDWKPE2M9/website.png?format=1500w",
+            "thumb_shared": {
+                "label": "Spotify",
+                "url": "https://www.spotify.com/tr/",
+                "target_type": "podcast",
+                "color": "#1DB954"
+            },
+            "thumb_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "categories": [
+                {
+                    "id": "1",
+                    "name": "Arts & Culture"
+                },
+                {
+                    "id": "2",
+                    "name": "Design"
+                }
+            ],
+            "type": "spotify"
+        }
+    },
+    {
+        "id": "2",
+        "name": "Courtney Henry",
+        "profile_image": "https://randomuser.me/api/portraits/men/31.jpg",
+        "title": "Architect",
+        "created_at": "2022-11-09 00:00:00",
+        "post": {
+            "message": "Lorem ipsum dolor sit amet 🤔, consectetur adipiscing elit, sed do @nilsuderici",
+            "image": "https://images.squarespace-cdn.com/content/v1/5f218ff1c287187ac8c9656c/1667557559492-K0EUIU65XOFTDWKPE2M9/website.png?format=1500w",
+            "thumb_shared": {
+                "label": "aeon.co",
+                "url": "https://www.aeon.co",
+                "target_type": "article",
+                "color": "blue"
+            },
+            "thumb_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "categories": [
+                {
+                    "id": "1",
+                    "name": "Arts & Culture"
+                },
+                {
+                    "id": "2",
+                    "name": "Design"
+                }
+            ],
+            "type": "blog"
+        }
+    },
+    {
+        "id": "2",
+        "name": "Kathryn Murphy",
+        "profile_image": "https://randomuser.me/api/portraits/men/36.jpg",
+        "title": "Computer Scientist",
+        "created_at": "2022-11-10 00:00:00",
+        "post": {
+            "message": "Lorem ipsum dolor sit amet 🤔, consectetur adipiscing elit, sed do @nilsuderici",
+            "image": "https://images.squarespace-cdn.com/content/v1/5f218ff1c287187ac8c9656c/1667557559492-K0EUIU65XOFTDWKPE2M9/website.png?format=1500w",
+            "thumb_shared": {
+                "label": "youtube",
+                "url": "https://www.aeon.co",
+                "target_type": "video",
+                "color": "red"
+            },
+            "thumb_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "categories": [
+                {
+                    "id": "1",
+                    "name": "Arts & Culture"
+                },
+                {
+                    "id": "2",
+                    "name": "Design"
+                }
+            ],
+            "type": "youtube"
+        },
+        "liked_user": {
+            "name": "Ekin İçbudak"
+        }
+    }
+]

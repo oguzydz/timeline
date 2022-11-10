@@ -1,5 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+
+import LeftArrowIcon from "../assets/icons/left-arrow.svg";
+import FilterIcon from "../assets/icons/filter.svg";
 
 const Header = () => {
     return (
@@ -10,3 +13,9 @@ const Header = () => {
 }
 
 export default Header;
+
+const styles = StyleSheet.create({
+    container: {
+
+    }
+});

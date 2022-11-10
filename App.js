@@ -1,15 +1,15 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
 import Header from './src/components/Header';
 import Timeline from './src/components/Timeline';
 
 const App = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Header />
       <Timeline />
-    </View>
+    </SafeAreaView>
   );
 };
 

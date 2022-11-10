@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import moment from 'moment';
 
@@ -6,9 +6,12 @@ import DotsIcon from '../assets/icons/dots.svg';
 import ClapsIcon from '../assets/icons/claps.svg';
 import PlayerIcon from '../assets/icons/player.svg';
 
+import Settings from './Settings';
+
 const window = Dimensions.get('window');
 
 const Post = ({ item, index }) => {
+    const [isSettingsMenuVisible, setIsSettingsMenuVisible] = useState(false);
 
     const renderPostMessage = (message) => {
         let splitText = message.split(' ')
@@ -43,7 +46,7 @@ const Post = ({ item, index }) => {
                         style={styles.profileImage}
                     />
                     <View style={styles.titleContainer}>
-                        <View style={styles.titleTextContainer}>
+                        <View>
                             <Text style={styles.userName}>
                                 {item?.name}
                             </Text>
@@ -56,7 +59,7 @@ const Post = ({ item, index }) => {
                         </Text>
                     </View>
                 </View>
-                <TouchableOpacity style={styles.dots}>
+                <TouchableOpacity onPress={() =>  setIsSettingsMenuVisible(true)} style={styles.dots}>
                     <DotsIcon />
                 </TouchableOpacity>
             </View>
@@ -104,6 +107,11 @@ const Post = ({ item, index }) => {
                     </TouchableOpacity>
                 ))}
             </ScrollView>
+
+            <Settings
+                isModalVisible={isSettingsMenuVisible}
+                setIsModalVisible={() => setIsSettingsMenuVisible(false)}
+            />
         </View>
     );
 }
@@ -139,8 +147,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginLeft: 6
     },
-    titleTextContainer: {
-    },
     userName: {
         fontSize: 16,
         fontWeight: '700',
@@ -159,7 +165,6 @@ const styles = StyleSheet.create({
         marginLeft: 6,
         marginTop: 2
     },
-    dots: {},
     messageContainer: {
         marginTop: 10,
     },

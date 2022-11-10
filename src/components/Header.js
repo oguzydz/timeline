@@ -6,8 +6,10 @@ import FilterIcon from "../assets/icons/filter.svg";
 
 const Header = () => {
     return (
-        <View>
-            <Text>Header</Text>
+        <View style={styles.container}>
+            <LeftArrowIcon />
+            <Text style={styles.title}>Indiviual View</Text>
+            <FilterIcon />
         </View>
     );
 }
@@ -16,6 +18,18 @@ export default Header;
 
 const styles = StyleSheet.create({
     container: {
-
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingVertical: 20.5,
+        paddingHorizontal: 18
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: "700",
+        color: "#111827",
+        letterSpacing: -0.072,
+        lineHeight: 25,
+        fontStyle: "normal"        
     }
 });

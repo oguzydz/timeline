@@ -63,7 +63,14 @@ const Post = ({ item, index }) => {
 
             <View style={styles.messageContainer}>
                 <Text style={styles.message}>
-                    {renderPostMessage(item?.post?.message)?.map((word) => word)}
+                    {renderPostMessage(item?.post?.message)?.map((word, index) => {
+                        if(typeof word === "string") {
+                            return <View key={index.toString()}><Text>{word}</Text></View>
+                        }
+                        if(typeof word === "object") {
+                            return <View key={index.toString()}>{word}</View>
+                        }
+                    })}
                 </Text>
             </View>
 
@@ -89,8 +96,8 @@ const Post = ({ item, index }) => {
             </View>
 
             <ScrollView horizontal contentContainerStyle={styles.footer}>
-                {item?.post?.categories?.map((category) => (
-                    <TouchableOpacity key={category?.id} style={styles.footerButton}>
+                {item?.post?.categories?.map((category, index) => (
+                    <TouchableOpacity key={index.toString()} style={styles.footerButton}>
                         <Text style={styles.footerButtonText}>
                             {category?.name}
                         </Text>

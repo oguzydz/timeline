@@ -79,7 +79,7 @@ const Post = ({ item, index }) => {
 
             <View style={styles.thumbContainer}>
                 <View>
-                    {<View style={styles.playerIconContainer}>
+                    {item?.post?.thumb_shared?.target_type === "podcast" && <View style={styles.playerIconContainer}>
                         <PlayerIcon />
                     </View>}
                     <Image
